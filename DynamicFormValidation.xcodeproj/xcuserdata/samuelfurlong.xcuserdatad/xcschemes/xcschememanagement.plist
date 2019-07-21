@@ -7,7 +7,25 @@
 		<key>DynamicFormValidation.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>26</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>31286F6522E3D6BD0069E7BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31286F7922E3D6BE0069E7BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31286F8422E3D6BE0069E7BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
