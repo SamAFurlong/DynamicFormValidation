@@ -16,7 +16,7 @@ protocol PartyInputViewModelProtocol: LocationViewModel{
     var date:MutableProperty<Date> {get}
     var startTime:MutableProperty<Date> {get}
     var endTime:MutableProperty<Date> {get}
-    var image:MutableProperty<UIImage> {get}
+    var image:MutableProperty<UIImage?> {get}
     var canBeDone: Property<Bool> {get}
     var currentParty: Property<Party> {get}
     var error:Property<PartyInputViewModel.PartyInputErrors?> {get}

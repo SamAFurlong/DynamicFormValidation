@@ -92,7 +92,7 @@ class PartyInputViewController:UIViewController,UIImagePickerControllerDelegate,
     }
     private func bindLocation(){
         locationTextField.reactive.text <~ viewModel.location
-        viewModel.location <~ locationTextField.reactive.textValues
+        viewModel.location <~ locationTextField.reactive.continuousTextValues
         
     }
     private func bindDoneAction(){

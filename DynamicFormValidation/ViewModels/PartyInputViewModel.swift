@@ -45,7 +45,7 @@ class PartyInputViewModel: PartyInputViewModelProtocol{
     let date:MutableProperty<Date>
     let startTime:MutableProperty<Date>
     let endTime:MutableProperty<Date>
-    let image:MutableProperty<UIImage>
+    let image:MutableProperty<UIImage?>
     let canBeDone: Property<Bool>
     let currentParty: Property<Party>
     let error:Property<PartyInputErrors?>
@@ -64,7 +64,7 @@ class PartyInputViewModel: PartyInputViewModelProtocol{
         date = MutableProperty(Date())
         endTime = MutableProperty(Date().adding(hours:2))
         startTime = MutableProperty(Date().adding(hours:1))
-        image = MutableProperty(party?.image ?? UIImage())
+        image = MutableProperty(party?.image)
         
         doneAction = Action{ party in
             //upload the party
@@ -99,17 +99,18 @@ class PartyInputViewModel: PartyInputViewModelProtocol{
             if  currentStartDateTime < Date() {
                 return .startInPast
             }
-           
+            
             return nil
-        
-    }
-        let canBeDoneValidator:Property<Bool> = Property.combineLatest(name, description, location, error)
-            .map{name, description, location, error in
+            
+        }
+        let canBeDoneValidator:Property<Bool> = Property.combineLatest(name, description, location, error, image)
+            .map{name, description, location, error, image in
                 
                 return name != ""
                     && location != ""
                     && description != ""
                     && error == nil
+                    && image != nil
                 
                 
                 

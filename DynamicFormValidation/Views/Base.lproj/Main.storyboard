@@ -192,7 +192,7 @@
                         <outlet property="nameTextField" destination="8Eo-rj-GVK" id="b7Y-YS-qIH"/>
                         <outlet property="partyImageView" destination="Lud-co-O97" id="3xd-jH-BmL"/>
                         <outlet property="startTimePicker" destination="Veh-Nx-TBg" id="KW1-jE-Hkq"/>
-                        <segue destination="RZO-IK-JRP" kind="show" id="aNd-zc-DuA"/>
+                        <segue destination="RZO-IK-JRP" kind="show" identifier="PartyCreationSuccess" id="aNd-zc-DuA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -213,12 +213,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFf-YV-ujY">
-                                <rect key="frame" x="115" y="366" width="145" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFf-YV-ujY">
+                                <rect key="frame" x="109" y="366" width="145" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="oqD-06-IHf"/>
                                 </constraints>
                                 <state key="normal" title="Create Another Party"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="JpN-UM-vRu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
