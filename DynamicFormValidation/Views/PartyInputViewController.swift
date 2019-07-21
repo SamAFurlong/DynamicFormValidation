@@ -8,7 +8,6 @@
 
 import UIKit
 import FirebaseStorage
-import FBSDKCoreKit
 import ReactiveSwift
 import ReactiveCocoa
 import Result
@@ -41,7 +40,7 @@ class PartyInputViewController:UIViewController,UIImagePickerControllerDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
         // reset the party after the view is reloaded
-        
+        registerForReachibilityAlerts()
         bindNameField()
         bindDescriptionField()
         bindDateTimePickers()

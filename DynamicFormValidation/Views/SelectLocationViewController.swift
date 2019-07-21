@@ -9,8 +9,7 @@
 import UIKit
 import MapKit
 class SelectLocationViewController: UIViewController, UISearchBarDelegate, AlertPresenter {
-    
-    
+
     private var searchController: UISearchController!
     private var annotation:MKAnnotation!
     private var localSearchRequest:MKLocalSearch.Request!

@@ -19,12 +19,13 @@
 		3133C27522E4A1EA00E511D4 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31712C0722E3DEDB00E1144E /* AlertPresenter.swift */; };
 		3133C27622E4A1EE00E511D4 /* PartyInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31712C0A22E3DEFD00E1144E /* PartyInputViewModel.swift */; };
 		3133C27722E4A1F800E511D4 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31712C0422E3DEC700E1144E /* Date+Extensions.swift */; };
-		3133C27822E4A1FE00E511D4 /* FirestoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31712C0C22E3DF1C00E1144E /* FirestoreAPI.swift */; };
+		3133C27822E4A1FE00E511D4 /* PartyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31712C0C22E3DF1C00E1144E /* PartyAPI.swift */; };
 		3133C27922E4A20700E511D4 /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31712C0622E3DED800E1144E /* SelectLocationViewController.swift */; };
 		3133C27A22E4A21200E511D4 /* PartyInputViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31712C0B22E3DF1100E1144E /* PartyInputViewModelProtocol.swift */; };
 		3133C27C22E4A23100E511D4 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3133C27B22E4A23100E511D4 /* Party.swift */; };
 		3133C27F22E4ABCB00E511D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3133C27E22E4ABCB00E511D4 /* GoogleService-Info.plist */; };
 		3133C28122E4B64F00E511D4 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3133C28022E4B64F00E511D4 /* LocationViewModel.swift */; };
+		3133C28322E4DF7F00E511D4 /* ReachabilityChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3133C28222E4DF7F00E511D4 /* ReachabilityChecker.swift */; };
 		669138EAA87FB94B866CC644 /* Pods_DynamicFormValidationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3127A0831FCE8B77981C2D5 /* Pods_DynamicFormValidationTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,12 +65,13 @@
 		3133C27B22E4A23100E511D4 /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 		3133C27E22E4ABCB00E511D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3133C28022E4B64F00E511D4 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		3133C28222E4DF7F00E511D4 /* ReachabilityChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityChecker.swift; sourceTree = "<group>"; };
 		31712C0422E3DEC700E1144E /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		31712C0622E3DED800E1144E /* SelectLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
 		31712C0722E3DEDB00E1144E /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
 		31712C0A22E3DEFD00E1144E /* PartyInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyInputViewModel.swift; sourceTree = "<group>"; };
 		31712C0B22E3DF1100E1144E /* PartyInputViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyInputViewModelProtocol.swift; sourceTree = "<group>"; };
-		31712C0C22E3DF1C00E1144E /* FirestoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreAPI.swift; sourceTree = "<group>"; };
+		31712C0C22E3DF1C00E1144E /* PartyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAPI.swift; sourceTree = "<group>"; };
 		4ECA6AB4BFD6BF7EA007331F /* Pods-DynamicFormValidation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicFormValidation.release.xcconfig"; path = "Target Support Files/Pods-DynamicFormValidation/Pods-DynamicFormValidation.release.xcconfig"; sourceTree = "<group>"; };
 		87E98B76566A8BBC53ABF10D /* Pods_DynamicFormValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicFormValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC4B703695DA3049D3B629F /* Pods_DynamicFormValidationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicFormValidationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +181,7 @@
 				31712C0722E3DEDB00E1144E /* AlertPresenter.swift */,
 				31712C0622E3DED800E1144E /* SelectLocationViewController.swift */,
 				3124E74522E4A0C8009D91DB /* PartyInputViewController.swift */,
+				3133C28222E4DF7F00E511D4 /* ReachabilityChecker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,7 +199,7 @@
 		31712C0222E3DEAC00E1144E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				31712C0C22E3DF1C00E1144E /* FirestoreAPI.swift */,
+				31712C0C22E3DF1C00E1144E /* PartyAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -396,15 +399,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DynamicFormValidation/Pods-DynamicFormValidation-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -418,15 +416,10 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -495,10 +488,11 @@
 				3133C27C22E4A23100E511D4 /* Party.swift in Sources */,
 				3133C27922E4A20700E511D4 /* SelectLocationViewController.swift in Sources */,
 				3133C28122E4B64F00E511D4 /* LocationViewModel.swift in Sources */,
-				3133C27822E4A1FE00E511D4 /* FirestoreAPI.swift in Sources */,
+				3133C27822E4A1FE00E511D4 /* PartyAPI.swift in Sources */,
 				3133C27722E4A1F800E511D4 /* Date+Extensions.swift in Sources */,
 				3133C27622E4A1EE00E511D4 /* PartyInputViewModel.swift in Sources */,
 				3133C27522E4A1EA00E511D4 /* AlertPresenter.swift in Sources */,
+				3133C28322E4DF7F00E511D4 /* ReachabilityChecker.swift in Sources */,
 				3133C27422E4A19A00E511D4 /* PartyInputViewController.swift in Sources */,
 				31286F6A22E3D6BD0069E7BD /* AppDelegate.swift in Sources */,
 			);

@@ -12,11 +12,7 @@ pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
 pod 'ReactiveCocoa', '~> 9.0'
 pod 'ReactiveSwift', '~> 5.0'
-
-
-pod 'FacebookCore', :git => 'https://github.com/facebook/facebook-sdk-swift'
-pod 'FacebookLogin', :git => 'https://github.com/facebook/facebook-sdk-swift'
-pod 'FacebookShare', :git => 'https://github.com/facebook/facebook-sdk-swift'
+pod 'ReachabilitySwift', '~> 4.3.0'
   target 'DynamicFormValidationTests' do
     inherit! :search_paths
     # Pods for testing

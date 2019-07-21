@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import ReactiveSwift
+import Reachability
 class PartyInputViewModel: PartyInputViewModelProtocol{
     enum PartyInputErrors {
         case startTimeEndTime
@@ -111,13 +112,10 @@ class PartyInputViewModel: PartyInputViewModelProtocol{
                     && description != ""
                     && error == nil
                     && image != nil
-                
-                
-                
         }
         canBeDone = Property(initial: false, then:canBeDoneValidator.producer)
-
-
+        
+        
     }
     
     

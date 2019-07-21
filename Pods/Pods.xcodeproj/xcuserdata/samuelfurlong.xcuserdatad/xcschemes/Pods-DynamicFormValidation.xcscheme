@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C4C6E2928097A7A91DAD1B3295ECC57C"
+               BlueprintIdentifier = "A276FE77B9D3C2EC5F9BDE587C0D99CE"
                BuildableName = "Pods_DynamicFormValidation.framework"
                BlueprintName = "Pods-DynamicFormValidation"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4C6E2928097A7A91DAD1B3295ECC57C"
+            BlueprintIdentifier = "A276FE77B9D3C2EC5F9BDE587C0D99CE"
             BuildableName = "Pods_DynamicFormValidation.framework"
             BlueprintName = "Pods-DynamicFormValidation"
             ReferencedContainer = "container:Pods.xcodeproj">

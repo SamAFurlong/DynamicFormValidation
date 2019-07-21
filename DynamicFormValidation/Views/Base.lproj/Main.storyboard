@@ -72,6 +72,8 @@
                                 <rect key="frame" x="142" y="155" width="95" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="95" id="L39-Ea-lz5"/>
+                                    <constraint firstAttribute="height" constant="80" id="o3f-TP-GF8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="95" id="q1j-1Z-my2"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkY-LI-MCp">

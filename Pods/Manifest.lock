@@ -5,26 +5,6 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.3):
     - BoringSSL-GRPC/Interface (= 0.0.3)
   - BoringSSL-GRPC/Interface (0.0.3)
-  - FacebookCore (0.7.0):
-    - FBSDKCoreKit (~> 5.0)
-  - FacebookLogin (0.7.0):
-    - FacebookCore (~> 0.7)
-    - FBSDKCoreKit (~> 5.0)
-    - FBSDKLoginKit (~> 5.0)
-  - FacebookShare (0.7.0):
-    - FacebookCore (~> 0.7)
-    - FBSDKCoreKit (~> 5.0)
-    - FBSDKShareKit (~> 5.0)
-  - FBSDKCoreKit (5.2.3):
-    - FBSDKCoreKit/Basics (= 5.2.3)
-    - FBSDKCoreKit/Core (= 5.2.3)
-  - FBSDKCoreKit/Basics (5.2.3)
-  - FBSDKCoreKit/Core (5.2.3):
-    - FBSDKCoreKit/Basics
-  - FBSDKLoginKit (5.2.3):
-    - FBSDKCoreKit (~> 5.0)
-  - FBSDKShareKit (5.2.3):
-    - FBSDKCoreKit (~> 5.0)
   - Firebase/Auth (6.5.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.2.1)
@@ -103,6 +83,7 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.9.0)
+  - ReachabilitySwift (4.3.1)
   - ReactiveCocoa (9.0.0):
     - ReactiveSwift (~> 5.0)
   - ReactiveSwift (5.0.1):
@@ -110,22 +91,16 @@ PODS:
   - Result (4.1.0)
 
 DEPENDENCIES:
-  - FacebookCore (from `https://github.com/facebook/facebook-sdk-swift`)
-  - FacebookLogin (from `https://github.com/facebook/facebook-sdk-swift`)
-  - FacebookShare (from `https://github.com/facebook/facebook-sdk-swift`)
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Storage
+  - ReachabilitySwift (~> 4.3.0)
   - ReactiveCocoa (~> 9.0)
-  - ReactiveSwift
   - ReactiveSwift (~> 5.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BoringSSL-GRPC
-    - FBSDKCoreKit
-    - FBSDKLoginKit
-    - FBSDKShareKit
     - Firebase
     - FirebaseAuth
     - FirebaseAuthInterop
@@ -139,37 +114,13 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
+    - ReachabilitySwift
     - ReactiveCocoa
     - ReactiveSwift
     - Result
 
-EXTERNAL SOURCES:
-  FacebookCore:
-    :git: https://github.com/facebook/facebook-sdk-swift
-  FacebookLogin:
-    :git: https://github.com/facebook/facebook-sdk-swift
-  FacebookShare:
-    :git: https://github.com/facebook/facebook-sdk-swift
-
-CHECKOUT OPTIONS:
-  FacebookCore:
-    :commit: aa0b54b874b4208b67f12fd3e427a5fa9bee39c1
-    :git: https://github.com/facebook/facebook-sdk-swift
-  FacebookLogin:
-    :commit: aa0b54b874b4208b67f12fd3e427a5fa9bee39c1
-    :git: https://github.com/facebook/facebook-sdk-swift
-  FacebookShare:
-    :commit: aa0b54b874b4208b67f12fd3e427a5fa9bee39c1
-    :git: https://github.com/facebook/facebook-sdk-swift
-
 SPEC CHECKSUMS:
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
-  FacebookCore: 09793a243fc7f8b86bed56264ba72bb5f9f95827
-  FacebookLogin: 9bebbd2cc993c15d4087647bec6104dd7202ce26
-  FacebookShare: c1eeb7ec0897fb0e4dd3f9cfe987bf637f5ec405
-  FBSDKCoreKit: 5154c35d9058fd7dfa0445ba19e194c4b172fc32
-  FBSDKLoginKit: dc98b6bf12334f1a42f28d0457fffc9aa3d1eca5
-  FBSDKShareKit: 6f9c622f9a5d051f43f2dab6f753d5198422b89c
   Firebase: dedc9e48ea3f3649ad5f6b982f8a0c73508a14b5
   FirebaseAuth: a06ad63e9bf4c86165b54cceb1c14d4f4c38d419
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
@@ -183,10 +134,11 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1097ca58584c8d9be81bfbf2c5ff5975648dd87a
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
   ReactiveCocoa: 29709cf0cc7502ddd04a51220e10ee0336d8bec8
   ReactiveSwift: cac20a5bbe560c5806bd29c0fccf90d03b996ac1
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
 
-PODFILE CHECKSUM: 30cbac958bb7e76057a397bed87f32f07082bc1b
+PODFILE CHECKSUM: 19e382e0e38b8af2d0d816ffd760ffccd437238d
 
 COCOAPODS: 1.6.0
